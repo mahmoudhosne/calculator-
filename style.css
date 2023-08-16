@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  padding: 25px;
+  font-size: 1.2em;
+  background-color: transparent;
+  color: white;
+  border: none;
+  opacity: 0.5;
+}
+
+.btn-close {
+  cursor: pointer;
+}
+main {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center center;
+}
+.content {
+  width: 300px;
+  min-height: 600px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.hidden {
+  display: none;
+}
+
+h1 {
+  position: absolute;
+  top: 10px;
+  font-size: 1em;
+  left: 10px;
+  opacity: 0.5;
+}
+.screen {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  min-height: 30%;
+  background-color: #2b2a3b;
+  color: white;
+  display: flex;
+  align-items: end;
+  padding: 0 10px;
+  justify-content: center;
+  row-gap: 10px;
+  position: relative;
+  flex-direction: column;
+}
+.screen p,
+.value-input--0,
+.value-input--1 {
+  font-size: 1.2em;
+}
+.value-input--0,
+.operation,
+.value-input--1,
+.value-result {
+  background-color: transparent;
+  border: none;
+  direction: rtl;
+  color: white;
+  width: 100%;
+  height: 20px;
+  font-size: 1.2em;
+}
+.line-center::after {
+  content: '';
+  width: 30%;
+  background-color: antiquewhite;
+  height: 1px;
+  position: absolute;
+  bottom: 10px;
+  opacity: 0.5;
+  left: 35%;
+}
+.btns-content {
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* padding: 5px  0; */
+  background-color: #33323b;
+  color: white;
+  display: grid;
+  /* gap: 15px; */
+  place-content: center;
+  grid-template-areas:
+    'a a a a'
+    'b b b b'
+    'c c c c'
+    'd d d d'
+    'e e e e ';
+}
+
+.first-row {
+  grid-area: a;
+}
+.second-row {
+  grid-area: b;
+}
+
+.third-row {
+  grid-area: c;
+}
+
+.fourth-row {
+  grid-area: d;
+}
+
+.fifth-row {
+  grid-area: e;
+}
+.btn-equall {
+  width: 50%;
+}
+[class^='btn-']:active {
+  background-color: rgba(232, 65, 65, 0.836);
+  border-radius: 5px;
+}
+
+/* buttons circyls */
